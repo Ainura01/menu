@@ -1,0 +1,82 @@
+:root {
+  --accent: #6e3086;
+  --accent: #6b1e67;
+  --pure-white: #fff;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: var(--accent);
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: var(--accent, #801772);
+}
+
+.header a {
+  color: var(--pure-white);
+  text-decoration: none;
+}
+
+.header-nav {
+  padding: 11px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 20%;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.header-logo img {
+  width: 100%;
+  height: 60px;
+  object-fit: contain;
+}
+
+.header-menu {
+  width: 78%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.header-menu-link {
+  padding: 15px;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.header-menu :hover {
+  background-color: #7a3d92;
+}
